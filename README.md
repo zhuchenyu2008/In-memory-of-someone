@@ -77,6 +77,23 @@
 3.  **本地测试 (可选)**：
     *   如果您在本地计算机上安装了 PHP 环境 (例如通过 XAMPP, WAMP, MAMP 或直接安装 PHP)，您可以将项目文件放置在本地服务器的文档根目录 (如 `htdocs`) 下，然后通过 `http://localhost/` 访问。
 
+## Docker 运行
+
+如果您希望使用 Docker 快速启动项目，可以按照以下步骤操作：
+
+1.  **构建镜像**：
+    ```bash
+    docker build -t memorial-page .
+    ```
+
+2.  **启动容器**：
+    ```bash
+    docker run --rm -p 5176:5176 memorial-page
+    ```
+
+3.  **访问页面**：
+    打开浏览器访问 `http://localhost:5176/`。
+
 ## 界面预览
 
 页面设计简洁，主要元素包括：
@@ -95,5 +112,3 @@
 3.  提交您的更改 (`git commit -m 'Add some AmazingFeature'`)。
 4.  推送到分支 (`git push origin feature/AmazingFeature`)。
 5.  开启一个 Pull Request。
-
-
